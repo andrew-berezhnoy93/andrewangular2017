@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
 })
+
 export class WeatherComponent implements OnInit {
 
 public hotels: Hotel[] = [
@@ -14,8 +15,8 @@ public hotels: Hotel[] = [
   address: 'Florida',
   phone: '+378099934323',
   photos: [
-    '../images/res.jpg',
-      '../images/r1.jpg'
+    'assets/images/res.jpg',
+      'assets/images/r1.jpg'
     ]
   },
   {
@@ -24,8 +25,8 @@ public hotels: Hotel[] = [
     address: 'California',
     phone: '+378099934889',
     photos: [
-      '../images/res.jpg',
-        '../images/r1.jpg'
+      'assets/images/res.jpg',
+        'assets/images/r1.jpg'
     ]
    },
    {
@@ -34,8 +35,8 @@ public hotels: Hotel[] = [
     address: 'Alaska',
     phone: '+378099934567',
     photos: [
-      '../images/res.jpg',
-        '../images/r1.jpg'
+      'assets/images/res.jpg',
+        'assets/images/r1.jpg'
     ]
    }
 ];

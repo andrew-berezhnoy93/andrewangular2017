@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "assets/css/styles.css"
+        "assets/css/style.css"
       ],
       "scripts": [],
       "environments": {
