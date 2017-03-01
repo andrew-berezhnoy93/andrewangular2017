@@ -1,8 +1,11 @@
 <body>
 	<h1>Hot Weather Widget</h1>
 <div class="element">
-    <app-weather></app-weather>
-    <app-hotels></app-hotels>
+    <app-weather [currentHotel]="currentHotel" (hotel)="hotelSearch($event)" [hotels]="hotels"></app-weather>
+    	<div class="element-right">
+			<app-temp [currentHotel]="currentHotel"></app-temp>
+			<app-follow [currentHotel]="currentHotel"></app-follow>
+		</div>
 	  <div class="clear"> </div>
 </div>
 <div class="copy-right">

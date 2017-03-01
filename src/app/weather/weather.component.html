@@ -1,5 +1,5 @@
 <div class="element-left">
-			<div class="element-bg-img"><img src="assets/images/1.jpg" alt="" class="img-responsive"> </div>
+			<div class="element-bg-img"><img [src]="currentHotel.image" alt="" class="img-responsive hotel-image"> </div>
 			<div class="element-left-bottom">
 				<div class="ele-strip">
 					<ul>
@@ -15,9 +15,10 @@
 						 <div class="activity_box">
 			        <div class="scrollbar" id="style-2">
 	                   <div class="activity-row" *ngFor="let hotel of hotels">
+						<a (click)="hotelSelect(hotel)">
 		                 <div class="activity-desc">
-                       <h5>{{hotel.name}}</h5>
-                        <p>{{hotel.address}}</p>
+                       	   <h5>{{hotel.name}}</h5>
+                           <p>{{hotel.address}}</p>
 		                   <h6>{{hotel.phone}}</h6>
 		                 </div>
 		                 <div class="activity-img">
@@ -28,8 +29,9 @@
 		                 	  </ul>
 		                 	</div>
 		                 <div class="clear"> </div>
+						</a>
 	                    </div>
-		  		        </div>
+		  			</div>
 		          </div>
 			   </div>
 		</div>

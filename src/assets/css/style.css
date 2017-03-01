@@ -469,3 +469,8 @@ h1 {
     font-size: 12px;
 }
 }
+
+.hotel-image {
+  width: 500px;
+  height: 400px;
+} 

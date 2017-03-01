@@ -4,16 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HotelsComponent } from './hotels/hotels.component';
 import { WeatherComponent } from './weather/weather.component';
-import { CurrentHotelComponent } from './hotels/current-hotel/current-hotel.component';
+import { TempComponent } from './temp/temp.component';
+import { FollowComponent } from './follow/follow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HotelsComponent,
     WeatherComponent,
-    CurrentHotelComponent
+    TempComponent,
+    FollowComponent
   ],
   imports: [
     BrowserModule,
